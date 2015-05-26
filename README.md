@@ -1,4 +1,4 @@
-#PHOTO Simple Gallery 2015
+#PHOTO Simple Gallery
 
 ###Introduction
 
@@ -16,9 +16,7 @@ You can find a live demo [here](http://rosarioprestigiacomo.com/portfolio/photog
 ###Main Features
 
 Create and edit multiple albums.
-
-Create and edit multiple users.
-
+Create and edit multiple users.  
 Photo titles and captions.
 
 Multifile upload with photo preview and remove buttons.
@@ -87,4 +85,5 @@ If you find a bug or have a question visit [rosarioprestigiacomo.com](http://ros
 ###License
 
 This project is licensed under **GPL v3**.
+
 The PHOTO Simple Gallery logo is licensed under **Creative Commons BY-NC-SA**.
