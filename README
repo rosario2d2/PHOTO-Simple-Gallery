@@ -1,0 +1,74 @@
+PHOTO Simple Gallery 2015
+
+Introduction
+=============================================================================================
+PHOTO Simple Gallery is a project by Rosario Prestigiacomo. 
+It is written in PHP and distributed under the GPL v3 license. 
+For more information about the developer visit www.rosarioprestigiacomo.com
+
+Requirements
+=============================================================================================
+PHP 5.5
+PHP-GD image library
+MySQL 
+
+Main Features
+=============================================================================================
+Create and edit multiple albums.
+Create and edit multiple users.
+Photo titles and captions.
+Multifile upload with photo preview and remove buttons.
+Homepage with Masonry grid.
+Fully responsive design.
+Automatically generates thumbnails.
+Simple image cache.
+Search bar in user panel.
+Administrator user role for controlling all the albums and photos.
+
+Install
+=============================================================================================
+Upload and extract PHOTO_Simple_Gallery.zip or PHOTO_Simple_Gallery.tar.gz to the web server.
+
+Make sure the logs/ and public/ directories are writable.
+
+Create the database tables with the included database.sql file.
+
+Open includes/config.php and fill the required fields.
+
+Open the browser and load the page/domain where you uploaded the files.
+
+Follow the instructions for creating the first administrator user.
+
+Login with the newly created administrator username and password.
+
+Delete install.php from the web server.
+
+FAQ
+=============================================================================================
+-What can i do with it?
+PHOTO Simple Gallery is free software and released under the GPL v3 license.
+You can use it on a site you are developing or for a client/company.
+
+-How can i change the logo?
+Change the images public/images/logo.jpg and public/images/logo_mobile.jpg with another two of your choice, 
+the dimensions should be respectively 150x200px and 48x180px or proportional to these values.
+
+-How can i change the footer name and copyright notice?
+Edit the file public/layouts/footer.php and change the required fields. 
+To change the license image, change license.png in public/images.
+
+-How can i change the about page?
+Edit everyting inside the div #about-panel in the about.php file.
+
+-Are templates supported?
+No, unfortunately templates are not supported, PHOTO Simple Gallery is a small personal project and lack many features.
+You can always write your own css by overwriting the existing one in the public/stylesheets directory.
+
+-Where can i contact the developer?
+If you find a bug or have a question visit www.rosarioprestigiacomo.com for the contact information. 
+
+
+More Info
+=============================================================================================
+This project was made for learning purposes and as part of Rosario Prestigiacomo web portfolio.
+The PHOTO Simple Gallery logo is licensed under Creative Commons BY-NC-SA
