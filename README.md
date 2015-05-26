@@ -41,7 +41,7 @@ Administrator user role for controlling all the albums and photos.
 
 **What can i do with it?**
 
-PHOTO Simple Gallery is [free software](http://en.wikipedia.org/wiki/Free_software) and released under the [GPL v3 license](http://rosarioprestigiacomo.com/portfolio/photogallery/COPYING).
+PHOTO Simple Gallery is [free software](http://en.wikipedia.org/wiki/Free_software) and released under the [GPL v3 license](http://www.gnu.org/copyleft/gpl.html).
 You can use it on a site you are developing or for a client/company.
 
 **How can i change the logo?**
@@ -63,7 +63,7 @@ Edit everyting inside the div `#about-panel` in the  `about.php` file.
 No, unfortunately templates are not supported, PHOTO Simple Gallery is a small personal project and lack many features.
 You can always write your own css by overwriting the existing one in the `public/stylesheets` directory.
 
-**-Where can i contact the developer?**
+**Where can i contact the developer?**
 
 If you find a bug or have a question visit [rosarioprestigiacomo.com](http://rosarioprestigiacomo.com) for the contact information. 
 
@@ -71,4 +71,4 @@ If you find a bug or have a question visit [rosarioprestigiacomo.com](http://ros
 ###License
 
 This project is licensed under **GPL v3**.  
-The PHOTO Simple Gallery logo is licensed under **Creative Commons BY-NC-SA**.
+The PHOTO Simple Gallery logo is licensed under **Creative Commons [BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/4.0/)**.
