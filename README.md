@@ -71,5 +71,5 @@ If you find a bug or have a question visit [rosarioprestigiacomo.com](http://ros
 ###License
 
 This project is licensed under **GPL v3**.  
-The PHOTO Simple Gallery logo is licensed under **Creative Commons [BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/4.0/)**.
+The PHOTO Simple Gallery logo is licensed under **Creative Commons [BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/4.0/)**.  
 Masonry.js and ImagesLoaded.js are made by [David DeSandro](http://desandro.com) and licensed under the **[MIT License](http://desandro.mit-license.org/)** 
