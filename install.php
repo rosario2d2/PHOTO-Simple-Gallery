@@ -1,6 +1,6 @@
 <?php
 require_once("includes/config.php");
-if(empty(DB_SERVER) || empty(DB_USER) || empty(DB_PASSWORD) | empty(DB_NAME)) {
+if(empty(DB_SERVER) || empty(DB_USER) || empty(DB_PASS) | empty(DB_NAME)) {
 	echo "<b>Error, fill all the required fields in includes/config.php.</b>";
 	die;
 } else {
@@ -18,7 +18,7 @@ require_once('includes/initialize.php');
 
 if(isset($_POST['submit'])) {
 	$user = new User();
-	
+
 	if(!empty($_POST['username']) && validate($_POST['username'], "alnum")) {
 		$username = User::check_username(trim($_POST['username']));
 		if($username) {
@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) {
 		$session->message("Username must be an alphanumeric string.");
 		redirect_to('install.php');
 	}
-	
+
 	if(!empty($_POST['password'])) {
 		if($_POST['password'] == $_POST['confirmpwd']) {
 			$password = trim($_POST['password']);
@@ -49,37 +49,37 @@ if(isset($_POST['submit'])) {
 		$session->message("Password field can't be empty.");
 		redirect_to('install.php');
 	}
-	
-	if(!empty($_POST['email']) && validate($_POST['email'], "email")) { 
-		$user->email = $_POST['email']; 
+
+	if(!empty($_POST['email']) && validate($_POST['email'], "email")) {
+		$user->email = $_POST['email'];
 	} elseif(empty($_POST['email'])) {
-		$user->email = NULL; 
+		$user->email = NULL;
 	} else {
 		$session->message("Email address not valid.");
 		redirect_to('install.php');
 	}
-	
+
 	if(!empty($_POST['first_name']) && validate($_POST['first_name'], "alnum")) {
 		$user->first_name = trim($_POST['first_name']);
-	} elseif(empty($_POST['first_name'])) { 
+	} elseif(empty($_POST['first_name'])) {
 		$user->first_name = NULL;
 	} else {
 		$session->message("First name must be an alphanumeric string.");
 		redirect_to('install.php');
 	}
-	
-	if(!empty($_POST['last_name']) && validate($_POST['last_name'], "alnum")) { 
+
+	if(!empty($_POST['last_name']) && validate($_POST['last_name'], "alnum")) {
 		$user->last_name = trim($_POST['last_name']);
-	} elseif(empty($_POST['last_name'])) { 
+	} elseif(empty($_POST['last_name'])) {
 		$user->last_name = NULL;
 	} else {
 		$session->message("Last name must be an alphanumeric string.");
 		redirect_to('install.php');
 	}
-	
+
 	$user->privilege_level = "admin";
 	$user->created = time();
-	
+
 	if($user->create_user()) {
 		log_action("info", "Install - New user \"{$user->username}\" created.");
 		redirect_to('admin/login.php');
@@ -93,7 +93,7 @@ if(isset($_POST['submit'])) {
 $user = User::count_all();
 
 ?>
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>Photo Simple Gallery</title>
@@ -110,31 +110,31 @@ $user = User::count_all();
 				padding:20px;
 				margin:40px auto 0;
 			}
-			
+
 			.install-box {
 				margin-bottom:30px;
 			}
-			
+
 			#logo {
 				text-align:center;
 			}
-			
+
 			#logo img {
 				width:250px;
 			}
-			
+
 			#install-welcome {
 				margin-top:30px;
 				text-align:center;
 			}
-			
+
 			#center-div-form {
 			}
-			
+
 			#info-box {
 				text-align:center;
 			}
-			
+
 			input[type=text], input[type=password]{
 				height: 35px;
 				font-size: 15px;
@@ -158,14 +158,14 @@ $user = User::count_all();
 				color:#FFFFFF;
 				vertical-align:middle;
 			}
-			
+
 			#center-form-div {
 				margin:auto;
 				padding:10px;
 				border:1px solid #ddd;
 				max-width:500px;
 			}
-			
+
 			#center-form-div input[type=text], input[type=password] {
 				width:100%;
 				margin-bottom:30px;
