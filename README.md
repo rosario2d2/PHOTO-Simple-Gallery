@@ -1,19 +1,19 @@
-#PHOTO Simple Gallery
+# PHOTO Simple Gallery
 
-###Introduction
+### Introduction
 
 A simple web photo gallery written in PHP and distributed under the GPL v3 license.
 This project was made for learning purposes and as part of Rosario Prestigiacomo web portfolio.
 For more information about the developer visit [rosarioprestigiacomo.com](http://rosarioprestigiacomo.com).
 You can find a live demo [here](http://rosarioprestigiacomo.com/portfolio/photogallery/).
 
-###Requirements
+### Requirements
 
 * PHP 5.5
 * PHP-GD image library
-* MySQL 
+* MySQL
 
-###Main Features
+### Main Features
 
 Create and edit multiple albums.  
 Create and edit multiple users.  
@@ -26,7 +26,7 @@ Simple image cache.
 Search bar in user panel.  
 Administrator user role for controlling all the albums and photos.
 
-###Install
+### Install
 
 1. Upload the files to the web server.  
 2. Make sure the logs/ and public/ directories are writable.  
@@ -37,7 +37,7 @@ Administrator user role for controlling all the albums and photos.
 7. Login with the newly created administrator username and password.  
 8. Delete install.php from the web server.
 
-###FAQ
+### FAQ
 
 **What can i do with it?**
 
@@ -46,12 +46,12 @@ You can use it on a site you are developing or for a client/company.
 
 **How can i change the logo?**
 
-Change the images `public/images/logo.jpg` and `public/images/logo_mobile.jpg` with another two of your choice, 
+Change the images `public/images/logo.jpg` and `public/images/logo_mobile.jpg` with another two of your choice,
 the dimensions should be respectively 150x200px and 48x180px or proportional to these values.
 
 **How can i change the footer name and copyright notice?**
 
-Edit the file `public/layouts/footer.php` and change the required fields. 
+Edit the file `public/layouts/footer.php` and change the required fields.
 To change the license image, change license.png in `public/images`.
 
 **How can i change the about page?**
@@ -65,11 +65,11 @@ You can always write your own css by overwriting the existing one in the `public
 
 **Where can i contact the developer?**
 
-If you find a bug or have a question visit [rosarioprestigiacomo.com](http://rosarioprestigiacomo.com) for the contact information. 
+If you find a bug or have a question visit [rosarioprestigiacomo.com](http://rosarioprestigiacomo.com) for the contact information.
 
 
-###License
+### License
 
 This project is licensed under **GPL v3**.  
 The PHOTO Simple Gallery logo is licensed under **Creative Commons [BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/4.0/)**.  
-Masonry.js and ImagesLoaded.js are made by [David DeSandro](http://desandro.com) and licensed under the **[MIT License](http://desandro.mit-license.org/)**. 
+Masonry.js and ImagesLoaded.js are made by [David DeSandro](http://desandro.com) and licensed under the **[MIT License](http://desandro.mit-license.org/)**.
